@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package co.edu.udea.compumovil.survey.question
+package co.edu.udea.compumovil.gr02_20232.lab2.survey.question
 
 import android.content.res.Configuration
 import android.net.Uri
@@ -51,8 +51,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import co.edu.udea.compumovil.gr02_20232.lab2.R
-import co.edu.udea.compumovil.survey.QuestionWrapper
-import co.edu.udea.compumovil.theme.JetsurveyTheme
+import co.edu.udea.compumovil.gr02_20232.lab2.survey.QuestionWrapper
+import co.edu.udea.compumovil.gr02_20232.lab2.theme.JetsurveyTheme
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 

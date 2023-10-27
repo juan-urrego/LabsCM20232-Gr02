@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package co.edu.udea.compumovil.survey
+package co.edu.udea.compumovil.gr02_20232.lab2.survey
 
 import android.content.Context
 import android.content.ContextWrapper

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package co.edu.udea.compumovil.survey.question
+package co.edu.udea.compumovil.gr02_20232.lab2.survey.question
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
@@ -47,7 +47,7 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import co.edu.udea.compumovil.gr02_20232.lab2.R
-import co.edu.udea.compumovil.survey.QuestionWrapper
+import co.edu.udea.compumovil.gr02_20232.lab2.survey.QuestionWrapper
 
 @Composable
 fun SingleChoiceQuestion(

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package co.edu.udea.compumovil.survey.question
+package co.edu.udea.compumovil.gr02_20232.lab2.survey.question
 
 import android.content.res.Configuration
 import androidx.annotation.StringRes
@@ -36,8 +36,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import co.edu.udea.compumovil.gr02_20232.lab2.R
-import co.edu.udea.compumovil.survey.QuestionWrapper
-import co.edu.udea.compumovil.theme.JetsurveyTheme
+import co.edu.udea.compumovil.gr02_20232.lab2.survey.QuestionWrapper
+import co.edu.udea.compumovil.gr02_20232.lab2.theme.JetsurveyTheme
 
 @Composable
 fun SliderQuestion(

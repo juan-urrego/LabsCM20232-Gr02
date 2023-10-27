@@ -27,11 +27,11 @@ import co.edu.udea.compumovil.gr02_20232.lab2.Destinations.SIGN_UP_ROUTE
 import co.edu.udea.compumovil.gr02_20232.lab2.Destinations.SURVEY_RESULTS_ROUTE
 import co.edu.udea.compumovil.gr02_20232.lab2.Destinations.SURVEY_ROUTE
 import co.edu.udea.compumovil.gr02_20232.lab2.Destinations.WELCOME_ROUTE
-import co.edu.udea.compumovil.signinsignup.SignInRoute
-import co.edu.udea.compumovil.signinsignup.SignUpRoute
-import co.edu.udea.compumovil.signinsignup.WelcomeRoute
-import co.edu.udea.compumovil.survey.SurveyResultScreen
-import co.edu.udea.compumovil.survey.SurveyRoute
+import co.edu.udea.compumovil.gr02_20232.lab2.signinsignup.SignInRoute
+import co.edu.udea.compumovil.gr02_20232.lab2.signinsignup.SignUpRoute
+import co.edu.udea.compumovil.gr02_20232.lab2.signinsignup.WelcomeRoute
+import co.edu.udea.compumovil.gr02_20232.lab2.survey.SurveyResultScreen
+import co.edu.udea.compumovil.gr02_20232.lab2.survey.SurveyRoute
 
 
 object Destinations {

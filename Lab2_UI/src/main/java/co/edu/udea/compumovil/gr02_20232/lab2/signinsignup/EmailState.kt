@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package co.edu.udea.compumovil.signinsignup
+package co.edu.udea.compumovil.gr02_20232.lab2.signinsignup
 
-import co.edu.udea.compumovil.signinsignup.TextFieldState
+import co.edu.udea.compumovil.gr02_20232.lab2.signinsignup.TextFieldState
 import java.util.regex.Pattern
 
 // Consider an email valid if there's some text before and after a "@"

@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package co.edu.udea.compumovil.survey
+package co.edu.udea.compumovil.gr02_20232.lab2.survey
 
 import android.net.Uri
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import co.edu.udea.compumovil.gr02_20232.lab2.R
-import co.edu.udea.compumovil.survey.question.DateQuestion
-import co.edu.udea.compumovil.survey.question.MultipleChoiceQuestion
-import co.edu.udea.compumovil.survey.question.PhotoQuestion
-import co.edu.udea.compumovil.survey.question.SingleChoiceQuestion
-import co.edu.udea.compumovil.survey.question.SliderQuestion
-import co.edu.udea.compumovil.survey.question.Superhero
+import co.edu.udea.compumovil.gr02_20232.lab2.survey.question.DateQuestion
+import co.edu.udea.compumovil.gr02_20232.lab2.survey.question.MultipleChoiceQuestion
+import co.edu.udea.compumovil.gr02_20232.lab2.survey.question.PhotoQuestion
+import co.edu.udea.compumovil.gr02_20232.lab2.survey.question.SingleChoiceQuestion
+import co.edu.udea.compumovil.gr02_20232.lab2.survey.question.SliderQuestion
+import co.edu.udea.compumovil.gr02_20232.lab2.survey.question.Superhero
 
 
 @Composable

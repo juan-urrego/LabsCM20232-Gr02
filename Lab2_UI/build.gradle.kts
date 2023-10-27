@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "co.edu.udea.compumovil.gr02_20232.lab2"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "co.edu.udea.compumovil.gr02_20232.lab2"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -61,9 +61,7 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended")
     implementation("androidx.appcompat:appcompat")
     implementation("io.coil-kt:coil-compose:2.4.0")
-    implementation("com.google.android.material:material")
     implementation("androidx.navigation:navigation-compose")
-    implementation("androidx.navigation:navigation-fragment-ktx")
     implementation("androidx.navigation:navigation-compose:2.5.3")
     implementation("com.google.android.material:material:1.6.1")
     implementation("com.google.accompanist:accompanist-swiperefresh:0.32.0")

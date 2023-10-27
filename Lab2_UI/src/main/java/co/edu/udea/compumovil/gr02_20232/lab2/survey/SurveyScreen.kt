@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package co.edu.udea.compumovil.survey
+package co.edu.udea.compumovil.gr02_20232.lab2.survey
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.layout.Column
@@ -47,8 +47,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import co.edu.udea.compumovil.gr02_20232.lab2.R
-import co.edu.udea.compumovil.theme.stronglyDeemphasizedAlpha
-import co.edu.udea.compumovil.util.supportWideScreen
+import co.edu.udea.compumovil.gr02_20232.lab2.theme.stronglyDeemphasizedAlpha
+import co.edu.udea.compumovil.gr02_20232.lab2.util.supportWideScreen
 
 @OptIn(ExperimentalMaterial3Api::class)
 // Scaffold is experimental in m3

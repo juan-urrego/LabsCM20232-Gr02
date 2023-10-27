@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package co.edu.udea.compumovil.signinsignup
+package co.edu.udea.compumovil.gr02_20232.lab2.signinsignup
 
 import androidx.compose.runtime.Immutable
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package co.edu.udea.compumovil.signinsignup
+package co.edu.udea.compumovil.gr02_20232.lab2.signinsignup
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -35,9 +35,9 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import co.edu.udea.compumovil.gr02_20232.lab2.R
-import co.edu.udea.compumovil.theme.JetsurveyTheme
-import co.edu.udea.compumovil.theme.stronglyDeemphasizedAlpha
-import co.edu.udea.compumovil.util.supportWideScreen
+import co.edu.udea.compumovil.gr02_20232.lab2.theme.JetsurveyTheme
+import co.edu.udea.compumovil.gr02_20232.lab2.theme.stronglyDeemphasizedAlpha
+import co.edu.udea.compumovil.gr02_20232.lab2.util.supportWideScreen
 
 @OptIn(ExperimentalMaterial3Api::class) // Scaffold is experimental in m3
 @Composable

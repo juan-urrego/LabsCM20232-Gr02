@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package co.edu.udea.compumovil.util
+package co.edu.udea.compumovil.gr02_20232.lab2.util
 
 import java.util.Calendar
 

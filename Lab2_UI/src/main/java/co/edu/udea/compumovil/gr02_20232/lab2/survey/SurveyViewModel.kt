@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package co.edu.udea.compumovil.survey
+package co.edu.udea.compumovil.gr02_20232.lab2.survey
 
 import android.net.Uri
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import co.edu.udea.compumovil.survey.question.Superhero
+import co.edu.udea.compumovil.gr02_20232.lab2.survey.question.Superhero
 
 const val simpleDateFormatPattern = "EEE, MMM d"
 

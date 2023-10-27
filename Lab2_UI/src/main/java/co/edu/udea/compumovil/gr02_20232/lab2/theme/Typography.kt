@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package co.edu.udea.compumovil.theme
+package co.edu.udea.compumovil.gr02_20232.lab2.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

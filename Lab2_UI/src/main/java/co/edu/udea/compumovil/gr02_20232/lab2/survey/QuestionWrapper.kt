@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package co.edu.udea.compumovil.survey
+package co.edu.udea.compumovil.gr02_20232.lab2.survey
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.background
@@ -31,8 +31,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import co.edu.udea.compumovil.theme.slightlyDeemphasizedAlpha
-import co.edu.udea.compumovil.theme.stronglyDeemphasizedAlpha
+import co.edu.udea.compumovil.gr02_20232.lab2.theme.slightlyDeemphasizedAlpha
+import co.edu.udea.compumovil.gr02_20232.lab2.theme.stronglyDeemphasizedAlpha
 
 /**
  * A scrollable container with the question's title, direction, and dynamic content.
