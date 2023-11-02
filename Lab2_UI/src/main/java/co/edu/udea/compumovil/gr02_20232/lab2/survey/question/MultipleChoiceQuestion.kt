@@ -37,14 +37,16 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import co.edu.udea.compumovil.gr02_20232.lab2.R
+import co.edu.udea.compumovil.gr02_20232.lab2.model.Hobby
 import co.edu.udea.compumovil.gr02_20232.lab2.survey.QuestionWrapper
 
 @Composable
 fun MultipleChoiceQuestion(
     @StringRes titleResourceId: Int,
     @StringRes directionsResourceId: Int,
-    possibleAnswers: List<Int>,
+    possibleAnswers: List<Int> = listOf(),
     selectedAnswers: List<Int>,
+    hobbies: List<Hobby>,
     onOptionSelected: (selected: Boolean, answer: Int) -> Unit,
     modifier: Modifier = Modifier,
 ) {
@@ -53,13 +55,13 @@ fun MultipleChoiceQuestion(
         titleResourceId = titleResourceId,
         directionsResourceId = directionsResourceId,
     ) {
-        possibleAnswers.forEach {
-            val selected = selectedAnswers.contains(it)
+        hobbies.forEach {
+            val selected = selectedAnswers.contains(it.id)
             CheckboxRow(
                 modifier = Modifier.padding(vertical = 8.dp),
-                text = stringResource(id = it),
+                text = it.hobbie,
                 selected = selected,
-                onOptionSelected = { onOptionSelected(!selected, it) }
+                onOptionSelected = { onOptionSelected(!selected, it.id) }
             )
         }
     }
@@ -115,6 +117,7 @@ fun MultipleChoiceQuestionPreview() {
         directionsResourceId = R.string.select_all,
         possibleAnswers = possibleAnswers,
         selectedAnswers = selectedAnswers,
+        hobbies = listOf(),
         onOptionSelected = { _, _ -> }
     )
 }
