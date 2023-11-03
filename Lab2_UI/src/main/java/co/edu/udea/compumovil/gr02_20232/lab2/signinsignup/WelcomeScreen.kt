@@ -49,6 +49,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import co.edu.udea.compumovil.gr02_20232.lab2.R
+import co.edu.udea.compumovil.gr02_20232.lab2.model.BackgroundViewModel
 import co.edu.udea.compumovil.gr02_20232.lab2.theme.JetsurveyTheme
 import co.edu.udea.compumovil.gr02_20232.lab2.theme.stronglyDeemphasizedAlpha
 import co.edu.udea.compumovil.gr02_20232.lab2.util.supportWideScreen
@@ -93,6 +94,8 @@ fun WelcomeScreen(
                     .fillMaxWidth()
                     .padding(horizontal = 20.dp)
             )
+
+
         }
     }
 }
@@ -140,7 +143,8 @@ private fun SignInCreateAccount(
     onSignInSignUp: (email: String) -> Unit,
     onSignInAsGuest: () -> Unit,
     onFocusChange: (Boolean) -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    backgroundViewModel: BackgroundViewModel = BackgroundViewModel()
 ) {
     val emailState by rememberSaveable(stateSaver = EmailStateSaver) {
         mutableStateOf(EmailState())
@@ -177,6 +181,21 @@ private fun SignInCreateAccount(
             onSignInAsGuest = onSignInAsGuest,
             modifier = Modifier.fillMaxWidth()
         )
+
+
+        Button(
+            onClick = { backgroundViewModel.startBackGroundTask()},
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 28.dp, bottom = 3.dp)
+        ) {
+            Text(
+                text = "Execute in background",
+                style = MaterialTheme.typography.titleSmall
+            )
+        }
+
+
     }
 }
 
