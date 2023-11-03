@@ -18,8 +18,12 @@ package co.edu.udea.compumovil.gr02_20232.lab2.survey
 
 import android.net.Uri
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import co.edu.udea.compumovil.gr02_20232.lab2.R
+import co.edu.udea.compumovil.gr02_20232.lab2.model.HobbyViewModel
 import co.edu.udea.compumovil.gr02_20232.lab2.survey.question.DateQuestion
 import co.edu.udea.compumovil.gr02_20232.lab2.survey.question.MultipleChoiceQuestion
 import co.edu.udea.compumovil.gr02_20232.lab2.survey.question.PhotoQuestion
@@ -33,18 +37,22 @@ fun FreeTimeQuestion(
     selectedAnswers: List<Int>,
     onOptionSelected: (selected: Boolean, answer: Int) -> Unit,
     modifier: Modifier = Modifier,
+    viewModel: HobbyViewModel = HobbyViewModel()
 ) {
+    val value by remember {
+        viewModel.repositories
+    }
+    
+    LaunchedEffect(key1 = Unit) {
+        viewModel.getHobbies()
+    }
+
+    println(value.hobbies)
+    println(R.string.read)
     MultipleChoiceQuestion(
         titleResourceId = R.string.in_my_free_time,
         directionsResourceId = R.string.select_all,
-        possibleAnswers = listOf(
-            R.string.read,
-            R.string.work_out,
-            R.string.draw,
-            R.string.play_games,
-            R.string.dance,
-            R.string.watch_movies,
-        ),
+        hobbies = value.hobbies,
         selectedAnswers = selectedAnswers,
         onOptionSelected = onOptionSelected,
         modifier = modifier,
