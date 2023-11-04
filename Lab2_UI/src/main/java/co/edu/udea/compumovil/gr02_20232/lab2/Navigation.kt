@@ -27,6 +27,7 @@ import co.edu.udea.compumovil.gr02_20232.lab2.Destinations.SIGN_UP_ROUTE
 import co.edu.udea.compumovil.gr02_20232.lab2.Destinations.SURVEY_RESULTS_ROUTE
 import co.edu.udea.compumovil.gr02_20232.lab2.Destinations.SURVEY_ROUTE
 import co.edu.udea.compumovil.gr02_20232.lab2.Destinations.WELCOME_ROUTE
+import co.edu.udea.compumovil.gr02_20232.lab2.model.BackgroundViewModel
 import co.edu.udea.compumovil.gr02_20232.lab2.signinsignup.SignInRoute
 import co.edu.udea.compumovil.gr02_20232.lab2.signinsignup.SignUpRoute
 import co.edu.udea.compumovil.gr02_20232.lab2.signinsignup.WelcomeRoute
@@ -45,6 +46,7 @@ object Destinations {
 @Composable
 fun JetsurveyNavHost(
     navController: NavHostController = rememberNavController(),
+    backgroundViewModel: BackgroundViewModel = BackgroundViewModel()
 ) {
     NavHost(
         navController = navController,
@@ -103,6 +105,7 @@ fun JetsurveyNavHost(
 
         composable(SURVEY_RESULTS_ROUTE) {
             SurveyResultScreen {
+                backgroundViewModel.startBackGroundTask()
                 navController.popBackStack(WELCOME_ROUTE, false)
             }
         }
